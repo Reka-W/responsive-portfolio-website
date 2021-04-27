@@ -122,6 +122,10 @@ textarea {
       margin: 0;
    }
 
+   h2 {
+     font-size: 1.3em;
+   }
+
    /***** Header *****/
 
    .container-wrapper {
@@ -130,6 +134,8 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: column wrap;
+      padding-top: 20px;
+
   }
 
    .header-divider {
@@ -137,18 +143,21 @@ textarea {
     height: 1px;
     background: rgb(97, 9, 9);
   }
+
    .title {
     width: 100%;
-    margin-top: 10px;
+    color: #4E2E8A;
+    margin: 15px 5px 5px 5px;
    }
 
    .title h1 {
-     font-size: 1.125em;
+     font-size: 1.35em;
      text-align: center;  
    }
 
    nav {
-  
+      font-size: 1em;
+      color:#4E2E8A;
    }
 
    nav ul {
@@ -167,6 +176,12 @@ textarea {
      
    }
 
+   header .container-wrapper {
+    border-top: #A83858 solid 1px;
+    padding: 0;
+   }
+
+
    .hero {
      background: url("../img/ramiro-mendes-CjS3QsRuxnE-unsplash.jpg");
       background-size: cover;
@@ -176,19 +191,49 @@ textarea {
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
+      width: 100%;
    }
 
     .hero h2 {
-      margin-left: 10px;;
+      margin-left: 10px;
+      font-size: 1.4em;
     }
 
-/****** About Me Section ********/
-
-    #about {
-      padding: 10px 0 20px 0;
+    .hero span {
+      color: #A83858;
     }
+
 
 /****** Work Section ********/
+
+#portfolio h2 {
+  color:#4E2E8A;
+}
+figure {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.port-desc{
+  padding-bottom: 20px;
+  border-bottom: #A83858 solid 1px;
+}
+
+#portfolio img {
+  margin-top: 10px;
+}
+/****** About Me Section ********/
+
+#about {
+  padding: 10px 0 20px 0;
+  background: #40BFBF;
+
+}
+
+.port-pic {
+  margin-top: 30px;
+}
 
 
 /* =================== Desktop Styles ================== */
