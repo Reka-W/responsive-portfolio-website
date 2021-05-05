@@ -134,7 +134,8 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-flow: column wrap;
-      padding-top: 20px;
+      /* padding-top: 20px; */
+      margin-top: 1.25em;
   }
 
    .header-divider {
@@ -177,7 +178,8 @@ textarea {
 
    header .container-wrapper {
     border-top: #A83858 solid 1px;
-    padding: 0;
+    border-bottom: #A83858 solid 1px;
+    padding-bottom: 3em;
    }
 
 
@@ -210,6 +212,11 @@ textarea {
 #contact h2 {
   color:#4E2E8A;
 }
+
+#portfolio h2 {
+  margin-bottom: 0;
+}
+
 figure {
   display:flex;
   justify-content: center;
@@ -221,8 +228,16 @@ figure {
   border-bottom: #A83858 solid 1px;
 }
 
+
+.port-desc span {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1em;
+}
+
 #portfolio img {
   margin-top: 10px;
+  border: 1px solid #4E2E8A;
 }
 
 /****** About Me Section ********/
@@ -230,7 +245,11 @@ figure {
 #about {
   padding: 10px 0 20px 0;
   background: #40BFBF;
+}
 
+#about h2 {
+  font-size: 1.17em;
+  text-align: center;
 }
 
 .port-pic {
@@ -244,25 +263,36 @@ figure {
   margin-bottom: 15px;
 }
 
+.contact-info a {
+  color: #a83858;
+}
+
 .social {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  width: 50%;
+  width: 40%;
 }
 
-.soc-icons {
-  display: flex;
+.social figure {
   justify-content: space-around;
-  align-items: center;
-  width: 100%;
 }
 
 .social a {
-
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
 }
+
+/* .copyright {
+background: #4E2E8A;
+  width: 100%;
+  text-align: center;
+} */
 
 /* .copyright {
   border-bottom: black solid 1px;
