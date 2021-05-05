@@ -240,6 +240,10 @@ figure {
   border: 1px solid #4E2E8A;
 }
 
+.port-pic {
+  margin-top: 30px;
+}
+
 .assurance {
   margin: .875em 0;
 }
@@ -251,11 +255,22 @@ figure {
   background: #40BFBF;
 }
 
-.port-pic {
-  margin-top: 30px;
+#about h2 {
+  width: 100%;
+  text-align: center;
 }
 
+
 /****** Footer Section ********/
+
+#contact {
+  margin-top: 1em;
+}
+
+#contact .container-wrapper {
+  border-bottom: #A83858 solid 1px;
+  padding: 0 0 .5em 0;
+}
 
 .contact-info {
   text-align: center;
@@ -296,12 +311,56 @@ background: #4E2E8A;
 /* .copyright {
   border-bottom: black solid 1px;
 } */
-/* =================== Desktop Styles ================== */
-@media only screen and (min-width: 1200px) {
+/* =================== Tablet Styles ================== */
+@media only screen and (min-width: 768px) {
 /* ======================================================== */
 
 /***** BASE STYLES *****/
 
+.container-wrapper {
+  width: 83%;
+}
+
+#about figure {
+  margin: 2em 0;
+  width: 40%;
+}
+
+
+
+#contact h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.social {
+  width: 20%;
+}
+
+.social a {
+  width: 20%;
+}
+}
+/* =================== Tablet Styles ================== */
+@media only screen and (min-width: 1200px) {
+  /* ======================================================== */
+  
+  #about .container-wrapper {
+    flex-flow: row wrap;
+  }
+  
+
+  
+  .bio {
+    width: 45%;
+  }
+  
+  #contact .container-wrapper {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 80%;
+  }
 
 }
 
