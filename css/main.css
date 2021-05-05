@@ -240,6 +240,10 @@ figure {
   border: 1px solid #4E2E8A;
 }
 
+.assurance {
+  margin: .875em 0;
+}
+
 /****** About Me Section ********/
 
 #about {
@@ -247,13 +251,12 @@ figure {
   background: #40BFBF;
 }
 
-#about h2 {
-  font-size: 1.17em;
-  text-align: center;
-}
-
 .port-pic {
   margin-top: 30px;
+}
+
+#about p {
+  width: 100%;
 }
 
 /****** Footer Section ********/
