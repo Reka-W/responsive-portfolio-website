@@ -100,7 +100,6 @@ textarea {
       font-family: 'Montserrat', sans-serif;
       font-size: 1em;
       background-color: #ffffff;
-
    }
 
    header,
@@ -126,6 +125,10 @@ textarea {
      font-size: 1.3em;
    }
 
+   p a {
+    text-decoration: none;
+   }
+
    /***** Header *****/
 
    .container-wrapper {
@@ -140,18 +143,21 @@ textarea {
 
    .header-divider {
     width: 100%;
-    height: 1px;
+    height: .07em;
     background: rgb(97, 9, 9);
   }
 
    .title {
-    width: 100%;
+    border-bottom: #A83858 solid .07em;
     color: #4E2E8A;
-    margin: 15px 5px 5px 5px;
+    margin: 0;
+    padding-bottom: .9em;
+    width: 100%;
    }
 
-   .title h1 {
-     font-size: 1.35em;
+  h1 {
+     font-size: 1.3em;
+     /* margin-bottom: 0; */
      text-align: center;  
    }
 
@@ -163,7 +169,7 @@ textarea {
    nav ul {
      list-style: none;
      text-align: center;
-    padding: 0;
+      padding: 0;
    }
 
    nav ul li {
@@ -176,27 +182,20 @@ textarea {
      
    }
 
-   header .container-wrapper {
-    border-top: #A83858 solid 1px;
-    border-bottom: #A83858 solid 1px;
-    padding-bottom: 3em;
-   }
-
-
    .hero {
      background: url("../img/ramiro-mendes-CjS3QsRuxnE-unsplash.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      padding: 90px 0 20px 0;
+      padding: 4.625em 0 1.25em 0;
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
-      width: 100%;
+      width: 90%;
    }
 
     .hero h2 {
-      margin-left: 10px;
+      margin-left: .625em;
       font-size: 1.4em;
     }
 
@@ -205,7 +204,7 @@ textarea {
     }
 
 
-/****** Work Section ********/
+/****** Portfolio Section ********/
 
 #portfolio h2,
 #about h2,
@@ -213,8 +212,14 @@ textarea {
   color:#4E2E8A;
 }
 
+#portfolio .container-wrapper {
+  border-top: #A83858 solid .07em;
+  margin-top: 1.875em;
+}
+
 #portfolio h2 {
   margin-bottom: 0;
+  margin-top: 2em;
 }
 
 figure {
@@ -224,8 +229,8 @@ figure {
 }
 
 .port-desc{
-  padding-bottom: 20px;
-  border-bottom: #A83858 solid 1px;
+  padding-bottom: 1.25em;
+  border-bottom: #A83858 solid .07em;
 }
 
 
@@ -236,23 +241,53 @@ figure {
 }
 
 #portfolio img {
-  margin-top: 10px;
-  border: 1px solid #4E2E8A;
+  margin-top: .625em;
+  border: .07em solid #4E2E8A;
 }
 
 .port-pic {
-  margin-top: 30px;
+  margin-top: 1.875em;
 }
 
 .assurance {
   margin: .875em 0;
 }
 
+.assurance .container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.assurance h3 {
+  text-align: center;
+}
+
+.third {
+  text-align: center;
+}
+#portfolio .assurance .container-wrapper {
+  border-top: none;
+}
+
+#portfolio .assurance img {
+  border: none;
+  margin-top: 1em;
+  width: 20%;
+}
+
+
+
 /****** About Me Section ********/
 
 #about {
-  padding: 10px 0 20px 0;
+  padding: .625em 0 1.25em 0;
   background: #40BFBF;
+}
+
+#about .container-wrapper {
+  margin-top: 0;
 }
 
 #about h2 {
@@ -260,6 +295,10 @@ figure {
   text-align: center;
 }
 
+#about figure {
+  margin: 1em 0;
+  width: 60%;
+}
 
 /****** Footer Section ********/
 
@@ -274,7 +313,7 @@ figure {
 
 .contact-info {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: .9375em;
 }
 
 .contact-info a {
@@ -287,11 +326,12 @@ figure {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  width: 40%;
+  width: 50%;
 }
 
 .social figure {
   justify-content: space-around;
+  width: 75%;
 }
 
 .social a {
@@ -321,12 +361,80 @@ background: #4E2E8A;
   width: 83%;
 }
 
+h1 {
+  font-size: 1.7em;
+  padding-top: .4em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.15em;
+}
+
+nav {
+  font-size: 1.26em;
+}
+
+.hero {
+  padding: 9em 0 2em 0;
+  width: 83%;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.assurance .container-wrapper {
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.third {
+  text-align: center;
+  width: 29%;
+}
+
+/* .assurance figure {
+  border: none;
+  width: 50%;
+
+} */
+
+/* .borders {
+  border-left: #a83858 solid .07em;
+  border-right: #a83858 solid .07em;
+} */
+
+#about .container-wrapper {
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #about figure {
   margin: 2em 0;
   width: 40%;
 }
 
+.bio {
+  width: 50%;
+}
 
+.bio p {
+  width: 100%;
+}
+
+#contact .container-wrapper {
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 80%;
+}
 
 #contact h2 {
   text-align: center;
@@ -337,30 +445,87 @@ background: #4E2E8A;
   width: 20%;
 }
 
+.social figure {
+  width: 100%;
+}
+
 .social a {
   width: 20%;
 }
+
+.copyright {
+  text-align: center;
+  width: 100%;
 }
-/* =================== Tablet Styles ================== */
+
+}
+/* =================== Desktop Styles ================== */
 @media only screen and (min-width: 1200px) {
   /* ======================================================== */
   
-  #about .container-wrapper {
-    flex-flow: row wrap;
-  }
-  
-
-  
-  .bio {
-    width: 45%;
-  }
-  
-  #contact .container-wrapper {
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: baseline;
+  .container-wrapper {
     width: 80%;
   }
+
+header .container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.title {
+  border-bottom: none;
+  padding: 0;
+  text-align: left;
+  width: 45%;
+}
+
+.heading {
+  width: 35%;
+}
+
+ul {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.hero {
+  width: 80%;
+}
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 2em 0 2em 0;
+  }
+
+.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .port-pic {
+    margin-top: 0;
+    width: 47%;
+  }
+
+  .port-desc {
+    border-bottom: none;
+    padding-bottom: 0;
+    width: 47%;
+  }
+
+.assurance {
+  border-top: .07em solid #A83858;
+}
+
+.assurance .third {
+  justify-content: center;
+}
 
 }
 
